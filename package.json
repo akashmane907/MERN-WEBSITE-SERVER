@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "build": "rm -rf node_modules && npm install"
+    "preinstall": "rm -rf node_modules",
+    "postinstall": "npm rebuild bcrypt"
   },
   "keywords": [],
   "author": "",
