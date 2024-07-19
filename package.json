@@ -4,10 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "preinstall": "rimraf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "preinstall": "rm -rf node_modules",
-    "postinstall": "npm rebuild bcrypt"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +20,8 @@
     "mongoose": "^8.4.4",
     "nodemon": "^3.1.4",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
   }
 }
